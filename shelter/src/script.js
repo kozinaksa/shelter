@@ -1,6 +1,6 @@
 import Header from './pages/main/header';
-import Start from './pages/main/start';
+import Not_only from './pages/main/not-only';
 
-const root = document.getElementById('root');
-root.append(Header);
-root.append(Start);
+const main = document.getElementById('main-page');
+main.append(Header);
+main.append(Not_only);

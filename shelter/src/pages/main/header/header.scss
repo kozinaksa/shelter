@@ -1,14 +1,14 @@
 .header-wrapper {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 187px 1fr;
+  grid-template-columns: 200px 1fr;
   padding: 30px 40px;
   position: absolute;
   left: 0;
   right: 0;
   width: 100vw;
   max-width: 1280px;
-  gap: 570px;
+  gap: 556px;
   align-items: center;
   justify-content: space-between;
 
@@ -56,6 +56,7 @@
 
       &:hover {
         color: #FAFAFA;
+        cursor: pointer;
       }
 
       &:active,
