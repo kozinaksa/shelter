@@ -38,11 +38,18 @@ module.exports = {
             loader: 'sass-resources-loader',
             options: {
               resources: [
-                'src/styles/vars.scss',
+                'src/vars.scss',
               ],
             },
           },
         ],
+      },
+      {
+        test: /\.(woff|woff2|ttf|eot)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name][ext]'
+        }
       },
     ],
   },
