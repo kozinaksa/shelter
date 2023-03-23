@@ -1,0 +1,1 @@
+import html from './pages/main/main.html'
