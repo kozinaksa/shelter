@@ -1,0 +1,33 @@
+.about {
+
+  .about-wrapper {
+    margin: 0 auto;
+    padding: 80px 215px 100px;
+    width: 100vw;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 120px;
+  }
+
+  .pets {
+
+    &__img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .content {
+    padding: 14px 0 0;
+
+    &__title {
+      width: 87%;
+      color: #545454;
+    }
+
+    &__text {
+      padding: 25px 0 0;
+    }
+  }
+}

@@ -16,27 +16,12 @@
     padding: 163px 0 0;
     width: 460px;
 
-    &__heading {
+    &__title {
       width: 67.4%;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 44px;
-      line-height: 130%;
-      display: flex;
-      align-items: center;
-      color: #FFFFFF;
     }
 
-    &__subheading {
+    &__text {
       padding: 42px 0;
-      font-family: 'Arial';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      display: flex;
-      align-items: center;
       color: #CDCDCD;
     }
 
