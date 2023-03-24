@@ -1,8 +1,9 @@
 .about {
+  background: #FFFFFF;
 
-  .about-wrapper {
+  &-wrapper {
     margin: 0 auto;
-    padding: 80px 215px 100px;
+    padding: 80px 40px 100px;
     width: 100vw;
     max-width: 1280px;
     display: grid;
@@ -10,7 +11,8 @@
     gap: 120px;
   }
 
-  .pets {
+  &__pets {
+    padding: 0 0 0 175px;
 
     &__img {
       display: block;
@@ -19,7 +21,7 @@
   }
 
   .content {
-    padding: 14px 0 0;
+    padding: 14px 175px 0 0;
 
     &__title {
       width: 87%;

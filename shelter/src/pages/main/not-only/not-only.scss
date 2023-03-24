@@ -1,6 +1,5 @@
 .not-only {
-  height: 908px;
-  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background: url(../../../assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 
   .not-only-wrapper {
     margin: 0 auto;
@@ -26,20 +25,7 @@
     }
 
     &__button {
-      width: 207px;
-      height: 52px;
-      left: calc(50% - 207px/2 - 126.5px);
-      bottom: 0px;
       background: #F1CDB3;
-      border-radius: 100px;
-
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 130%;
-      letter-spacing: 0.06em;
-      color: #292929;
 
       &:hover {
         background: #FDDCC4;
