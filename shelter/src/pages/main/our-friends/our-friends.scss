@@ -15,7 +15,7 @@
   }
 
   .slider {
-    padding: 60px 0;
+    padding: 58px 0;
     display: grid;
     grid-template-columns: 52px 1fr 52px;
     align-items: center;
@@ -32,13 +32,13 @@
 
       .control-left {
         position: relative;
-        top: -4px;
+        top: -3px;
       }
 
       .control-right {
         transform: rotate(180deg);
         position: relative;
-        top: -4px;
+        top: -3px;
       }
 
       &:hover {
