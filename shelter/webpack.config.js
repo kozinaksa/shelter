@@ -6,14 +6,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
 const target = devMode ? 'web' : 'browserslist';
-const devtool = undefined;
+const devtool = devMode ? 'source-map' : undefined;
 
 module.exports = {
   mode,
   target,
   devtool,
   devServer: {
-    compress: true,
+    // compress: true,
     open: true,
     port: 3000,
   },
@@ -31,7 +31,7 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          "style-loader",
+          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",
           "sass-loader",
           {
@@ -43,6 +43,9 @@ module.exports = {
             },
           },
         ],
+        // generator: {
+        //   filename: 'styles/[name][ext]'
+        // }
       },
       {
         test: /\.(woff|woff2|ttf|eot)$/i,

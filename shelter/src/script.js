@@ -1,3 +1,5 @@
+import './styles/_defaultStyle.scss';
+
 import header from './pages/main/header';
 import notOnly from './pages/main/not-only';
 import about from './pages/main/about';

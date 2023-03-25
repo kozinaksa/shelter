@@ -2,9 +2,9 @@
   "name": "shelter",
   "scripts": {
     "clear": "rd /s /q dist",
-    "dev": "set NODE_ENV=development&&webpack",
-    "start": "set NODE_ENV=development&&webpack serve",
-    "build": "set NODE_ENV=production&&webpack"
+    "build-dev": "set NODE_ENV=development&&webpack",
+    "build-prod": "set NODE_ENV=production&&webpack",
+    "start": "set NODE_ENV=development&&webpack serve"
   },
   "devDependencies": {
     "css-loader": "^6.7.3",
@@ -12,6 +12,9 @@
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.5",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.1.0",
+    "postcss-preset-env": "^8.1.0",
     "sass": "^1.59.3",
     "sass-loader": "^13.2.1",
     "sass-resources-loader": "^2.2.5",
