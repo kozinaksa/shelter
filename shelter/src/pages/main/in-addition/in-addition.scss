@@ -1,0 +1,57 @@
+.in-addition {
+  background: #F6F6F6;
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 1.24fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 80px 40px 100px;
+    width: 100vw;
+    max-width: 1280px;
+  }
+
+  .dog {
+    text-align: right;
+  }
+
+  .content {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    max-width: 380px;
+
+    &__title {
+      max-width: 80%;
+    }
+
+    .credit-card {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-content: left;
+      gap: 15px;
+      padding: 10px 15px;
+      width: fit-content;
+      background: #F1CDB3;
+      border-radius: 9px;
+
+      &:hover {
+        background-color: #FDDCC4;
+        cursor: pointer;
+        transition: all .6s ease-in-out;
+      }
+    }
+
+    &__info {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      color: #B2B2B2;
+    }
+  }
+}

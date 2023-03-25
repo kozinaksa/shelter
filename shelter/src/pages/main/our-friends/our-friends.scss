@@ -22,7 +22,7 @@
     gap: 53px;
 
     &__controls {
-      margin: 25px 0 0;
+      // margin: 25px 0 0;
       padding: 0;
       width: 52px;
       height: 52px;
@@ -30,8 +30,15 @@
       border-radius: 100px;
       background-color: inherit;
 
+      .control-left {
+        position: relative;
+        top: -4px;
+      }
+
       .control-right {
         transform: rotate(180deg);
+        position: relative;
+        top: -4px;
       }
 
       &:hover {
@@ -52,6 +59,19 @@
 
       .card {
         background-color: #FAFAFA;
+
+        &:hover {
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          cursor: pointer;
+          transition: all .6s ease-in-out;
+        }
+
+        &:hover .card__button {
+          background: #FDDCC4;
+          border: 2px solid #FDDCC4;
+          border-radius: 100px;
+          transition: all .6s ease-in-out;
+        }
 
         &__image {
           height: 270px;
@@ -77,6 +97,7 @@
         }
 
         &__button {
+          margin: 0 0 30px;
           background-color: inherit;
           border: 2px solid #F1CDB3;
 
@@ -91,7 +112,6 @@
   }
 
   &__button {
-    margin: 25px 0 0;
     background: #F1CDB3;
 
     &:hover {
