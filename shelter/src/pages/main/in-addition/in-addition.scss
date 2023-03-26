@@ -35,11 +35,11 @@
       width: fit-content;
       background: #F1CDB3;
       border-radius: 9px;
+      transition: .6s ease;
 
       &:hover {
         background-color: #FDDCC4;
         cursor: pointer;
-        transition: all .6s ease-in-out;
       }
     }
 

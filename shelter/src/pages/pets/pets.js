@@ -2,7 +2,7 @@ import '../../styles/_defaultStyle.scss';
 
 import header from "./header";
 import ourFriends from './our-friends';
-import footer from '../index/footer'
+import footer from './footer'
 
 const ourPets = document.getElementById("pets-page");
 ourPets.append(header);
