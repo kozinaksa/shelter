@@ -61,7 +61,7 @@ var getUrl_default = /*#__PURE__*/__webpack_require__.n(getUrl);
 var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(515), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = getUrl_default()(___HTML_LOADER_IMPORT_0___);
-var not_only_code = "<div class=\"not-only\"> <div class=\"not-only-wrapper\"> <div class=\"content\"> <h1 class=\"content__title\">Not only people need a house</h1> <p class=\"content__text\">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p> <button class=\"content__button\"><a href=\"./#friends\">Make a friend</a></button> </div> <div class=\"puppy\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"puppy\" class=\"puppy__image\"> </div> </div> </div>";
+var not_only_code = "<div class=\"not-only\"> <div class=\"not-only-wrapper\"> <div class=\"content\"> <h1 class=\"content__title\">Not only people need a house</h1> <p class=\"content__text\">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p> <button class=\"content__button\"><a href=\"#friends\">Make a friend</a></button> </div> <div class=\"puppy\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"puppy\" class=\"puppy__image\"> </div> </div> </div>";
 // Exports
 /* harmony default export */ var not_only = (not_only_code);
 ;// CONCATENATED MODULE: ./src/pages/main/not-only/index.js
