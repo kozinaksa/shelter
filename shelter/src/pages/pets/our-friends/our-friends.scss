@@ -12,53 +12,95 @@
   &__title {
     margin: 0 auto;
     width: 35%;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
   }
 
   .slider {
     padding: 58px 0;
     display: grid;
-    grid-template-columns: 52px 1fr 52px;
     align-items: center;
-    gap: 53px;
+    row-gap: 45px;
 
     &__controls {
-      // margin: 25px 0 0;
-      padding: 0;
-      width: 52px;
-      height: 52px;
-      border: 2px solid #F1CDB3;
-      border-radius: 100px;
-      background-color: inherit;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      column-gap: 20px;
+      justify-content: center;
+      align-items: center;
 
-      .control-left {
-        position: relative;
-        top: -3px;
-      }
+      .control-btn {
+        padding: 0;
+        width: 52px;
+        height: 52px;
+        border: 2px solid #CDCDCD;
+        border-radius: 100px;
+        background-color: inherit;
+        cursor: auto;
 
-      .control-right {
-        transform: rotate(180deg);
-        position: relative;
-        top: -3px;
-      }
+        &~._num._active {
+          border: 2px solid #F1CDB3;
+          background: #F1CDB3;
+        }
 
-      &:hover {
-        background-color: #FDDCC4;
-        border: 2px solid #FDDCC4;
-      }
+        &~._active {
+          border: 2px solid #F1CDB3;
+          cursor: pointer;
+        }
 
-      &:active {
-        background-color: #F1CDB3;
-        border: 2px solid #F1CDB3;
+        &~._active:hover {
+          background-color: #FDDCC4;
+          border: 2px solid #FDDCC4;
+        }
+
+        &~._active:active {
+          background-color: #F1CDB3;
+          border: 2px solid #F1CDB3;
+        }
+
+        &__num {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 115%;
+          text-align: center;
+          letter-spacing: 0.06em;
+          color: #292929;
+        }
+
+        &__left-all,
+        &__left,
+        &__right,
+        &__right-all {
+          position: relative;
+          top: 2px;
+        }
+
+        &__right,
+        &__right-all {
+          transform: rotate(180deg);
+          path {
+            fill: #292929;
+          }
+        }
       }
     }
 
     &__cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 90px;
+      grid-template-columns: repeat(4, 1fr);
+      // grid-auto-flow: column;
+      column-gap: 40px;
+      row-gap: 28px;
 
       .card {
         background-color: #FAFAFA;
+        border-radius: 9px;
 
         &:hover {
           box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
@@ -75,9 +117,11 @@
 
         &__image {
           height: 270px;
+          width: 270px;
           background-position: center center;
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
+          border-radius: 9px 9px 0px 0px;
         }
 
         .image-one {
@@ -90,6 +134,26 @@
 
         .image-three {
           background-image: url(../../../assets/images/woody.png);
+        }
+
+        .image-four {
+          background-image: url(../../../assets/images/sophia.png);
+        }
+
+        .image-five {
+          background-image: url(../../../assets/images/timmy.png);
+        }
+
+        .image-six {
+          background-image: url(../../../assets/images/charly.png);
+        }
+
+        .image-seven {
+          background-image: url(../../../assets/images/scarlett.png);
+        }
+
+        .image-eight {
+          background-image: url(../../../assets/images/freddie.png);
         }
 
         &__name {

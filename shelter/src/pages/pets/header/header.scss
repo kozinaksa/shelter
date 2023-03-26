@@ -7,14 +7,13 @@
     padding: 30px 40px;
     width: 100vw;
     max-width: 1280px;
+    // height: 120px;
     gap: 556px;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 
     .logo {
-      display: grid;
-      align-items: center;
-      gap: 10px;
+      height: 60px;
 
       &__title {
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -31,7 +30,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 13px;
-        line-height: 15px;
+        line-height: 32px;
         letter-spacing: 0.1em;
         color: #292929;
       }

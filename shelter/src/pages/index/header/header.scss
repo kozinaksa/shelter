@@ -13,9 +13,6 @@
   justify-content: space-between;
 
   .logo {
-    display: grid;
-    align-items: center;
-    gap: 10px;
 
     &__title {
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -32,7 +29,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 13px;
-      line-height: 15px;
+      line-height: 32px;
       letter-spacing: 0.1em;
       color: #FFFFFF;
     }

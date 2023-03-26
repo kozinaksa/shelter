@@ -2,8 +2,8 @@
   "name": "shelter",
   "scripts": {
     "clear": "rd /s /q dist",
-    "build-dev": "set NODE_ENV=development&&webpack",
-    "build-prod": "set NODE_ENV=production&&webpack",
+    "develop": "set NODE_ENV=development&&webpack",
+    "build": "set NODE_ENV=production&&webpack",
     "start": "set NODE_ENV=development&&webpack serve"
   },
   "devDependencies": {
