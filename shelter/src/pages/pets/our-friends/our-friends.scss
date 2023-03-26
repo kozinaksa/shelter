@@ -1,0 +1,121 @@
+.our-friends {
+  background: #F6F6F6;
+
+  &-wrapper {
+    margin: 0 auto;
+    padding: 80px 40px 100px;
+    width: 100vw;
+    max-width: 1280px;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 auto;
+    width: 35%;
+  }
+
+  .slider {
+    padding: 58px 0;
+    display: grid;
+    grid-template-columns: 52px 1fr 52px;
+    align-items: center;
+    gap: 53px;
+
+    &__controls {
+      // margin: 25px 0 0;
+      padding: 0;
+      width: 52px;
+      height: 52px;
+      border: 2px solid #F1CDB3;
+      border-radius: 100px;
+      background-color: inherit;
+
+      .control-left {
+        position: relative;
+        top: -3px;
+      }
+
+      .control-right {
+        transform: rotate(180deg);
+        position: relative;
+        top: -3px;
+      }
+
+      &:hover {
+        background-color: #FDDCC4;
+        border: 2px solid #FDDCC4;
+      }
+
+      &:active {
+        background-color: #F1CDB3;
+        border: 2px solid #F1CDB3;
+      }
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 90px;
+
+      .card {
+        background-color: #FAFAFA;
+
+        &:hover {
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          cursor: pointer;
+          transition: all .6s ease-in-out;
+        }
+
+        &:hover .card__button {
+          background: #FDDCC4;
+          border: 2px solid #FDDCC4;
+          border-radius: 100px;
+          transition: all .6s ease-in-out;
+        }
+
+        &__image {
+          height: 270px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        .image-one {
+          background-image: url(../../../assets/images/katrine.png);
+        }
+
+        .image-two {
+          background-image: url(../../../assets/images/jennifer.png);
+        }
+
+        .image-three {
+          background-image: url(../../../assets/images/woody.png);
+        }
+
+        &__name {
+          padding: 30px 0;
+        }
+
+        &__button {
+          margin: 0 0 30px;
+          background-color: inherit;
+          border: 2px solid #F1CDB3;
+
+          &:hover {
+            background: #FDDCC4;
+            border: 2px solid #FDDCC4;
+            border-radius: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    background: #F1CDB3;
+
+    &:hover {
+      background: #FDDCC4;
+    }
+  }
+}
