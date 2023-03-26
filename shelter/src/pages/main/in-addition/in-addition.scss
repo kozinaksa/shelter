@@ -41,6 +41,10 @@
         background-color: #FDDCC4;
         cursor: pointer;
       }
+
+      &:active {
+        background-color: #F1CDB3;
+      }
     }
 
     &__info {

@@ -22,7 +22,7 @@
   }
 
   .slider {
-    padding: 58px 0 0;
+    padding: 60px 0 0;
     display: grid;
     align-items: center;
     row-gap: 55px;
@@ -115,6 +115,12 @@
           border-radius: 100px;
         }
 
+        &:active .card__button {
+          background-color: #F1CDB3;
+          border: 2px solid #F1CDB3;
+          border-radius: 100px;
+        }
+
         &__image {
           height: 270px;
           width: 270px;
@@ -165,12 +171,6 @@
           background-color: inherit;
           border: 2px solid #F1CDB3;
           transition: .6s ease;
-
-          &:hover {
-            background: #FDDCC4;
-            border: 2px solid #FDDCC4;
-            border-radius: 100px;
-          }
         }
       }
     }
@@ -181,6 +181,10 @@
 
     &:hover {
       background: #FDDCC4;
+    }
+
+    &:active {
+      background-color: #F1CDB3;
     }
   }
 }
