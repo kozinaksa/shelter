@@ -18,13 +18,14 @@
     font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
+    color: #545454;
   }
 
   .slider {
-    padding: 58px 0;
+    padding: 58px 0 0;
     display: grid;
     align-items: center;
-    row-gap: 45px;
+    row-gap: 55px;
 
     &__controls {
       display: grid;
