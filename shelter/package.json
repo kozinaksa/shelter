@@ -3,7 +3,7 @@
   "scripts": {
     "clear": "rd /s /q dist",
     "develop": "set NODE_ENV=development&&webpack",
-    "build": "set NODE_ENV=production&&webpack",
+    "build": "npm run clear && set NODE_ENV=production&&webpack",
     "start": "set NODE_ENV=development&&webpack serve",
     "deploy": "npm run build && npx gh-pages -d dist -e shelter"
   },

@@ -8,6 +8,8 @@ import help from './help';
 import inAddition from './in-addition';
 import footer from './footer';
 
+import './self-assessment';
+
 const main = document.getElementById('main-page');
 main.append(header);
 main.append(notOnly);

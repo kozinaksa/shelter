@@ -129,7 +129,7 @@ module.exports = {
   //   }),
   // ],
   optimization: {
-    minimize: false,
+    minimize: true,
     runtimeChunk: 'single',
     // splitChunks: {
     //   chunks: 'all',
