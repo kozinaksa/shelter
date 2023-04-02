@@ -7,29 +7,84 @@
     width: 100vw;
     max-width: 1280px;
     display: grid;
-    grid-template-columns: 1fr 1.6fr;
-    gap: 120px;
+    grid-template-columns: 1fr 1.26fr;
+    gap: 117px;
+    justify-content: center;
+    align-items: start;
+
+    @media screen and (max-width: 1080px) {
+      padding: 80px 3.8vw;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      gap: 80px;
+    }
+
+    @media screen and (max-width: 766px) {
+      padding: 42px 0;
+      gap: 42px;
+    }
   }
 
   &__pets {
-    padding: 0 0 0 175px;
+    justify-self: right;
+
+    @media screen and (max-width: 1080px) {
+      order: 2;
+      margin: 0 auto;
+      padding: 0 0 20px;
+      width: auto;
+    }
+
 
     &__img {
       display: block;
       margin: 0 auto;
+      max-width: 300px;
     }
   }
 
   .content {
-    padding: 14px 175px 0 0;
+    justify-self: left;
+    padding: 14px 0 0;
+    width: 70%;
+
+
+    @media screen and (max-width: 1080px) {
+      margin: 0 auto;
+      width: auto;
+      padding: 0 19.8%;
+    }
+
+    @media screen and (max-width: 766px) {
+      padding: 0;
+      margin: 0 auto;
+      width: 84.5vw;
+    }
 
     &__title {
       width: 87%;
       color: #545454;
+
+      @media screen and (max-width: 766px) {
+        padding: 0;
+        text-align: center;
+        width: auto;
+      }
+
+      @media screen and (max-width: 425px) {
+        font-size: 8vw;
+        line-height: 1.3;
+        letter-spacing: 0.06em;
+      }
     }
 
     &__text {
       padding: 25px 0 0;
+
+      @media screen and (max-width: 425px) {
+        text-align: justify;
+        padding: 22px 0 0;
+      }
     }
   }
 }

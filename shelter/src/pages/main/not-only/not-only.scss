@@ -61,10 +61,12 @@
 
       @media screen and (max-width: 380px) {
         width: auto;
+        padding: 40px 0;
       }
     }
 
     .btn-form {
+
       @media screen and (max-width: 1080px) {
         text-align: center;
       }
@@ -73,7 +75,7 @@
         border: 2px solid #F1CDB3;
         background-color: #F1CDB3;
         transition: .6s ease;
-
+  
         @media screen and (max-width: 1080px) {
           margin: 0 auto;
         }
@@ -107,6 +109,10 @@
       @media screen and (max-width: 1080px) {
         float: right;
         width: auto;
+      }
+
+      @media screen and (max-width: 380px) {
+        padding: 6px 0 0;
       }
     }
   }
