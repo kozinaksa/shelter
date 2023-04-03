@@ -10,23 +10,74 @@
     display: grid;
     grid-template-columns: 1.4fr 1.4fr 0.8fr;
     align-items: top;
-    gap: 138px;
+
+    @media screen and (max-width: 1080px) {
+      margin: 0 auto;
+      padding: 32px 8.4vw 0;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+          "contacts location"
+          "puppy puppy";
+      height: auto;
+    }
+
+    @media screen and (max-width: 450px) {
+      padding: 30px 3vw 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+          "contacts"
+          "location"
+          "puppy";
+      row-gap: 38px;
+      max-width: none;
+    }
   }
 
   .location {
     position: relative;
     right: 10px;
+
+    @media screen and (max-width: 1080px) {
+      right: -18px;
+    }
+
+    @media screen and (max-width: 450px) {
+      right: 0;
+    }
   }
 
   .contacts,
   .location {
+    max-width: 296px;
     display: flex;
     flex-direction: column;
     gap: 32px;
     padding: 20px 0;
 
+    @media screen and (max-width: 1080px) {
+      padding: 0;
+    }
+
+    @media screen and (max-width: 450px) {
+      gap: 40px;
+      max-width: none;
+    }
+
     &__title {
       color: #FFFFFF;
+
+      @media screen and (max-width: 680px) {
+        font-size: 4.5vw;
+      }
+
+      @media screen and (max-width: 450px) {
+        font-size: 7.5vw;
+        text-align: center;
+        max-width: 70vw;
+        margin: 0 auto;
+      }
     }
 
     .mail,
@@ -39,6 +90,14 @@
 
       &__subtitle {
         color: #F1CDB3;
+
+        @media screen and (max-width: 680px) {
+          font-size: 3vw;
+        }
+
+        @media screen and (max-width: 450px) {
+          font-size: 6.3vw;
+        }
       }
 
       &:hover {
@@ -50,9 +109,40 @@
   .contacts {
     gap: 40px;
 
+    @media screen and (max-width: 450px) {
+      gap: 42px;
+    }
+
     .mail,
     .phone {
       column-gap: 20px;
+
+      @media screen and (max-width: 450px) {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+
+  .puppy {
+    @media screen and (max-width: 1080px) {
+      margin: 0 auto;
+      grid-area: puppy;
+      padding: 61px 0 0;
+      vertical-align: bottom;
+    }
+
+    @media screen and (max-width: 680px) {
+      padding: 0;
+    }
+
+    &__image {
+      @media screen and (max-width: 680px) {
+        max-width: fit-content;
+        width: 81vw;
+        padding: 0;
+        vertical-align: top;
+      }
     }
   }
 }

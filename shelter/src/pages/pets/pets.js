@@ -2,7 +2,7 @@ import '../../styles/_defaultStyle.scss';
 
 import header from "./header";
 import ourFriends from './our-friends';
-import footer from './footer'
+import footer from '../main/footer'
 
 import '../main/self-assessment';
 
