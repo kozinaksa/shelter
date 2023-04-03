@@ -22,10 +22,6 @@
   .logo {
     text-align: center;
 
-    @media screen and (max-width: 1200px) {
-      text-align: center;
-    }
-
     &__title {
       font-family: Georgia, 'Times New Roman', Times, serif;
       font-style: normal;
@@ -81,6 +77,12 @@
       &:first-child {
         color: #FAFAFA;
         border-bottom: 2px solid #F1CDB3;
+
+        &,
+          & .nav__link {
+            cursor: default;
+            user-select: none;
+          }
       }
     }
   }

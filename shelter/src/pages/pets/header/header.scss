@@ -1,26 +1,33 @@
 .header {
   background: #FFFFFF;
+
   .header-wrapper {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 187px 1fr;
     padding: 30px 40px;
     width: 100vw;
     max-width: 1280px;
-    // height: 120px;
-    gap: 556px;
     align-items: baseline;
     justify-content: space-between;
 
+    @media screen and (max-width: 1200px) {
+      padding: 30px 3.8vw;
+    }
+
+    @media  screen and (max-width: 380px) {
+      padding: 30px 6vw;
+    }
+
     .logo {
-      height: 60px;
+      text-align: center;
 
       &__title {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
-        line-height: 110%;
+        font-size: 2.1rem;
+        line-height: 1.1;
         letter-spacing: 0.06em;
         color: #545454;
       }
@@ -29,28 +36,34 @@
         font-family: Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 13px;
-        line-height: 32px;
+        font-size: 0.87rem;
+        line-height: 2.5;
         letter-spacing: 0.1em;
         color: #292929;
       }
     }
+
     .nav {
       width: 100%;
       position: relative;
       top: 5px;
 
+      @media screen  and (max-width: 766px) {
+        display: none;
+      }
+
       &__list {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        justify-content: space-between;
+        justify-content: right;
+        gap: 36px;
       }
 
       &__item {
         font-family: Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 160%;
         color: #545454;
 
@@ -63,7 +76,44 @@
         &:nth-child(2) {
           color: #292929;
           border-bottom: 3px solid #F1CDB3;
+          user-select: none;
+
+          &,
+          & .nav__link {
+            cursor: default;
+            user-select: none;
+          }
         }
+      }
+    }
+  }
+
+  .burger-icon {
+    display: none;
+    width: 30px;
+	  height: 29px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+	  z-index: 200;
+    overflow: hidden;
+
+    @media screen and (max-width: 766px) {
+      display: grid;
+    }
+
+    & span {
+      width: 30px;
+	    height: 2px;
+	    background-color: #000000;
+	    transition: all 0.5s;
+
+      &:nth-of-type(2) {
+        top: calc(50% - 5px);
+      }
+
+      &:nth-of-type(3) {
+        top: calc(05% + 5px);
       }
     }
   }
