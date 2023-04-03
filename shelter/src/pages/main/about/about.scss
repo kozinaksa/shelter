@@ -20,8 +20,8 @@
     }
 
     @media screen and (max-width: 766px) {
-      padding: 44px 0;
-      gap: 42px;
+      padding: 42px 0;
+      gap: 41px;
     }
   }
 
@@ -35,8 +35,12 @@
       margin: 0 auto;
       padding: 0 0 20px;
       width: auto;
+      left: 0;
     }
 
+    @media screen and (max-width: 766px) {
+      padding: 0;
+    }
 
     &__img {
       display: block;
@@ -85,7 +89,7 @@
 
       @media screen and (max-width: 425px) {
         text-align: justify;
-        padding: 23px 0 0;
+        padding: 22px 0 0;
       }
     }
   }
