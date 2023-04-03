@@ -5,18 +5,18 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 187px 1fr;
-    padding: 30px 40px;
+    padding: 30px 40px 22px;
     width: 100vw;
     max-width: 1280px;
     align-items: baseline;
     justify-content: space-between;
 
     @media screen and (max-width: 1200px) {
-      padding: 30px 3.8vw;
+      padding: 30px 3.8vw 25px;
     }
 
     @media  screen and (max-width: 380px) {
-      padding: 30px 6vw;
+      padding: 30px 6vw 23px;
     }
 
     .logo {
