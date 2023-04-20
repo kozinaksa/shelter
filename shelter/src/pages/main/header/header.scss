@@ -21,6 +21,7 @@
 
   .logo {
     text-align: center;
+    transition: none;
 
     &__title {
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -47,10 +48,6 @@
     width: 100%;
     position: relative;
     top: -5px;
-
-    @media screen  and (max-width: 766px) {
-      display: none;
-    }
 
     &__list {
       display: grid;
@@ -83,36 +80,6 @@
             cursor: default;
             user-select: none;
           }
-      }
-    }
-  }
-
-  .burger-icon {
-    display: none;
-    width: 30px;
-	  height: 29px;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-	  z-index: 200;
-    overflow: hidden;
-
-    @media screen and (max-width: 766px) {
-      display: grid;
-    }
-
-    & span {
-      width: 30px;
-	    height: 2px;
-	    background-color: #F1CDB3;
-	    transition: all 0.5s;
-
-      &:nth-of-type(2) {
-        top: calc(50% - 5px);
-      }
-
-      &:nth-of-type(3) {
-        top: calc(05% + 5px);
       }
     }
   }

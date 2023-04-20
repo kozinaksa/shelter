@@ -44,77 +44,45 @@
     }
 
     .nav {
-      width: 100%;
-      position: relative;
-      top: 5px;
+      // @media screen and (min-width: 768px) {
+        width: 100%;
+        position: relative;
+        top: 5px;
 
-      @media screen  and (max-width: 766px) {
-        display: none;
-      }
-
-      &__list {
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        justify-content: right;
-        gap: 36px;
-      }
-
-      &__item {
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 160%;
-        color: #545454;
-
-        &:hover {
-          color: #292929;
-          cursor: pointer;
+        &__list {
+          display: grid;
+          grid-template-columns: repeat(4, auto);
+          justify-content: right;
+          gap: 36px;
         }
 
-        &:active,
-        &:nth-child(2) {
-          color: #292929;
-          border-bottom: 3px solid #F1CDB3;
-          user-select: none;
+        &__item {
+          font-family: Arial, Helvetica, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 160%;
+          color: #545454;
 
-          &,
-          & .nav__link {
-            cursor: default;
+          &:hover {
+            color: #292929;
+            cursor: pointer;
+          }
+
+          &:active,
+          &:nth-child(2) {
+            color: #292929;
+            border-bottom: 3px solid #F1CDB3;
             user-select: none;
+
+            &,
+            & .nav__link {
+              cursor: default;
+              user-select: none;
+            }
           }
         }
-      }
-    }
-  }
-
-  .burger-icon {
-    display: none;
-    width: 30px;
-	  height: 29px;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-	  z-index: 200;
-    overflow: hidden;
-
-    @media screen and (max-width: 766px) {
-      display: grid;
-    }
-
-    & span {
-      width: 30px;
-	    height: 2px;
-	    background-color: #000000;
-	    transition: all 0.5s;
-
-      &:nth-of-type(2) {
-        top: calc(50% - 5px);
-      }
-
-      &:nth-of-type(3) {
-        top: calc(05% + 5px);
-      }
+      // }
     }
   }
 }

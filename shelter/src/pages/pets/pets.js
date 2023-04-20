@@ -1,10 +1,11 @@
 import '../../styles/_defaultStyle.scss';
 
-import header from "./header";
+import header from './header';
 import ourFriends from './our-friends';
 import footer from '../main/footer'
 
-import '../main/self-assessment';
+import '../../assets/js/self-assessment';
+import '../../assets/js/burger';
 
 const ourPets = document.getElementById("pets-page");
 ourPets.append(header);

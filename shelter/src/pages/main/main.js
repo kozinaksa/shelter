@@ -8,7 +8,8 @@ import help from './help';
 import inAddition from './in-addition';
 import footer from './footer';
 
-import './self-assessment';
+import '../../assets/js/self-assessment';
+import '../../assets/js/burger';
 
 const main = document.getElementById('main-page');
 main.append(header);
